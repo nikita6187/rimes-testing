@@ -4,8 +4,6 @@ export PATH=~/cuda-9.0/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/cuda-9.0/extras/CUPTI/lib64
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/cuda-9.0/lib64
 
-echo $PATH
+python3 ../returnn/rnn.py ./returnn_tests/tf-neural-transducer.rimes.config
 
-python3 ./test.py
 
-echo $PATH
