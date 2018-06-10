@@ -6,6 +6,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/cuda-9.0/lib64
 
 source ./ENV/bin/activate
 
-python3 ../returnn/rnn.py ./returnn_tests/tf-neural-transducer.rimes.200-20.config
+python3 ../returnn/rnn.py ./returnn_tests/tf-neural-transducer.rimes.200-20.adam.config
 
 
