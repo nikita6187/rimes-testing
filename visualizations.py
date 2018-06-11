@@ -18,12 +18,14 @@ def main():
         data2 = []
         with open(sys.argv[i + 1]) as f:
             for line in f:
-                print(line)
                 split = line.split(' ')
                 if len(split) > 6:
-                    print(split[6].split(',')[0])
                     if re.match("^\d+?\.\d+?$", split[6].split(',')[0]) is not None:
                         data1.append(float(split[6].split(',')[0]))
+                elif len(split) == 2:
+                    split2 = re.split(r'\[|\]', split[1])
+                    if len(split2) == 3:
+                        data1.append(float(split2[1]))
             new_data = 0
             for i in range(len(data1)):
                 new_data += data1[i]/average_over
