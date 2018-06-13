@@ -1,0 +1,5 @@
+RETURNN Neural Transducer
+50 Input block size
+8 max outputs
+Trained 50 epochs
+2048 for input/output layer
